@@ -1,4 +1,4 @@
-# TURBO GYM – Website README
+# CROWN GYM – Website README
 
 ## Owner Checklist (things to do before launching)
 
@@ -20,7 +20,7 @@ Select-String -Path ".\*",".\**\*" -Pattern "\[\[OWNER" -Recurse
 
 | Item | File | What to do |
 |---|---|---|
-| Domain / canonical URL | `index.html` (line with `rel="canonical"`) | Replace `[[OWNER: https://www.turbogym.et/]]` with your real domain |
+| Domain / canonical URL | `index.html` (line with `rel="canonical"`) | Replace `[[OWNER: https://www.crowngym.et/]]` with your real domain |
 | og:url | `index.html` (Open Graph block) | Same domain as above |
 | og:image | `index.html` (Open Graph block) | Absolute URL to `assets/og-image.jpg` on your domain |
 | Sitemap URL in robots.txt | `robots.txt` | Replace placeholder with your real sitemap URL |
@@ -36,7 +36,7 @@ Select-String -Path ".\*",".\**\*" -Pattern "\[\[OWNER" -Recurse
 
 ### 2. Photos to supply
 
-Replace placeholder images in `assets/` with real TURBO GYM photos **before launch**. Never use stock photos live.
+Replace placeholder images in `assets/` with real CROWN GYM photos **before launch**. Never use stock photos live.
 
 | Filename | Recommended size | Notes |
 |---|---|---|
@@ -130,16 +130,16 @@ GitHub Pages provides HTTPS automatically. Any hosting provider (Netlify, Vercel
 
 ### Google Search Console
 1. Go to search.google.com/search-console.
-2. Add your site as a **URL-prefix** property (e.g. `https://www.turbogym.et/`).
+2. Add your site as a **URL-prefix** property (e.g. `https://www.crowngym.et/`).
 3. Verify ownership (HTML file method is simplest — just upload the file Google gives you).
 4. Submit your sitemap: **Sitemaps → Add sitemap → enter `sitemap.xml`**.
 
 ### Google Business Profile
 1. Go to business.google.com.
-2. Search for "TURBO GYM Dukem" — claim if found, or create new.
+2. Search for "CROWN GYM Dukem" — claim if found, or create new.
 3. Add: phone number, opening hours (once you know clock times), photos.
 4. Add your website URL once it is live.
-5. A verified Google Business Profile makes TURBO GYM appear on Google Maps.
+5. A verified Google Business Profile makes CROWN GYM appear on Google Maps.
 
 ---
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- ============================================================
-       SEO â€“ Primary & Local Ranking (#1 Dukem Fitness)
+       SEO — Primary & Local Ranking (#1 Dukem Fitness)
   ============================================================ -->
   <title>CROWN GYM Dukem | Best Gym &amp; Fitness Center in Dukem, Ethiopia</title>
   <meta name="description"
         content="Train at CROWN GYM in Dukem, Oromia, Ethiopia. Premier strength training, free weights, dedicated cardio zone &amp; flexible memberships from 150 ETB/day. Open 7 days a week, 12 hours daily." />
   <meta name="keywords"
-        content="gym in Dukem, CROWN GYM, best gym Dukem, gym Dukam, fitness Dukem Ethiopia, gym membership Dukem, strength training Dukem, cardio gym Dukem Oromia, bodybuilding Dukem, á‰±áˆ­á‰¦ áŒ‚áˆ, Dukem gym" />
+        content="gym in Dukem, CROWN GYM, best gym Dukem, gym Dukam, fitness Dukem Ethiopia, gym membership Dukem, strength training Dukem, cardio gym Dukem Oromia, bodybuilding Dukem, ክሮውን ጅም, Dukem gym" />
   <meta name="author" content="CROWN GYM" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
@@ -47,13 +47,15 @@
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:title"       content="CROWN GYM Dukem | Best Gym &amp; Fitness Center in Dukem, Ethiopia" />
   <meta name="twitter:description" content="Train at CROWN GYM in Dukem, Oromia. Memberships from 150 ETB/day. Open 7 days a week, 12 hours daily." />
-  <meta name="twitter:image"       content="https://www.crowngym.et/assets/og-image.jpg" />
+  <meta name="twitter:image"       content="https://www.crowngym.et/assets/og-image.png" />
+  <meta name="twitter:image:alt"   content="CROWN GYM modern fitness center in Dukem Ethiopia" />
 
   <!-- ============================================================
        Favicon
   ============================================================ -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <link rel="preload" as="image" href="assets/hero-gym.webp" type="image/webp" fetchpriority="high" />
   <meta name="theme-color" content="#0B0B0D" />
 
   <!-- Resilience Fallback if JavaScript is Disabled or Blocked -->
@@ -65,7 +67,7 @@
   </noscript>
 
   <!-- ============================================================
-       Fonts â€“ Barlow Condensed (display) + Inter (body)
+       Fonts — Barlow Condensed (display) + Inter (body)
   ============================================================ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -84,7 +86,7 @@
       "@type": ["ExerciseGym", "SportsActivityLocation", "HealthClub"],
       "@id": "https://www.crowngym.et/#gym",
       "name": "CROWN GYM",
-      "alternateName": ["á‰±áˆ­á‰¦ áŒ‚áˆ", "CROWN GYM Dukem", "Crown Fitness Dukem"],
+      "alternateName": ["ክሮውን ጅም", "CROWN GYM Dukem", "Crown Fitness Dukem"],
       "url": "https://www.crowngym.et/",
       "image": [
         "https://www.crowngym.et/assets/gallery-4.jpg",
@@ -326,7 +328,7 @@
         <div class="drawer-lang-switcher" role="group" aria-label="Language selection">
           <button type="button" class="lang-btn is-active" data-lang-choice="en" aria-pressed="true" title="English">EN (English)</button>
           <button type="button" class="lang-btn" data-lang-choice="om" aria-pressed="false" title="Afaan Oromoo">OR (Oromoo)</button>
-          <button type="button" class="lang-btn" data-lang-choice="am" aria-pressed="false" title="áŠ áˆ›áˆ­áŠ›">áŠ áˆ› (áŠ áˆ›áˆ­áŠ›)</button>
+          <button type="button" class="lang-btn" data-lang-choice="am" aria-pressed="false" title="አማርኛ">አማ (አማርኛ)</button>
         </div>
       </nav>
 
@@ -335,7 +337,7 @@
         <div class="lang-switcher" role="group" aria-label="Language selection">
           <button type="button" class="lang-btn is-active" data-lang-choice="en" aria-pressed="true" title="English">EN</button>
           <button type="button" class="lang-btn" data-lang-choice="om" aria-pressed="false" title="Afaan Oromoo">OR</button>
-          <button type="button" class="lang-btn" data-lang-choice="am" aria-pressed="false" title="áŠ áˆ›áˆ­áŠ›">áŠ áˆ›</button>
+          <button type="button" class="lang-btn" data-lang-choice="am" aria-pressed="false" title="አማርኛ">AM</button>
         </div>
 
         <!-- Mobile hamburger -->
@@ -365,9 +367,10 @@
              muted
              loop
              playsinline
-             poster="assets/hero-gym.jpg"
+             poster="assets/hero-gym.webp"
              aria-hidden="true">
-        <source src="https://cdn.coverr.co/videos/coverr-man-training-with-dumbbells-1567504471594/1080p.mp4" type="video/mp4" />
+        <!-- Protect mobile data in Ethiopia: load 1080p stream only on desktop screens -->
+        <source media="(min-width: 768px)" src="https://cdn.coverr.co/videos/coverr-man-training-with-dumbbells-1567504471594/1080p.mp4" type="video/mp4" />
       </video>
       <div class="hero-overlay" aria-hidden="true"></div>
 
@@ -578,7 +581,7 @@
                 <span class="price-amount">150</span>
                 <span class="price-currency">ETB</span>
               </div>
-              <p class="plan-duration" data-i18n="plan-daily-dur">per visit â€¢ no commitment</p>
+              <p class="plan-duration" data-i18n="plan-daily-dur">per visit • no commitment</p>
             </div>
             <div class="pricing-card-body">
               <ul class="plan-features" role="list">
@@ -622,14 +625,14 @@
           <article class="pricing-card pricing-card--popular reveal" aria-labelledby="plan-monthly-name">
             <div class="pricing-card-header">
               <div class="plan-top-bar">
-                <span class="plan-pill plan-pill--popular" data-i18n="badge-monthly">â˜… Most Popular</span>
+                <span class="plan-pill plan-pill--popular" data-i18n="badge-monthly">★ Most Popular</span>
               </div>
               <h3 id="plan-monthly-name" class="plan-name" data-i18n="plan-monthly-title">Monthly</h3>
               <div class="plan-price">
                 <span class="price-amount">1,500</span>
                 <span class="price-currency">ETB</span>
               </div>
-              <p class="plan-duration" data-i18n="plan-monthly-dur">per month â€¢ only 50 ETB/day</p>
+              <p class="plan-duration" data-i18n="plan-monthly-dur">per month • only 50 ETB/day</p>
             </div>
             <div class="pricing-card-body">
               <ul class="plan-features" role="list">
@@ -680,7 +683,7 @@
                 <span class="price-amount">4,000</span>
                 <span class="price-currency">ETB</span>
               </div>
-              <p class="plan-duration" data-i18n="plan-3m-dur">for 3 months â€¢ 1,333 ETB/mo</p>
+              <p class="plan-duration" data-i18n="plan-3m-dur">for 3 months • 1,333 ETB/mo</p>
             </div>
             <div class="pricing-card-body">
               <ul class="plan-features" role="list">
@@ -724,14 +727,14 @@
           <article class="pricing-card pricing-card--featured reveal" aria-labelledby="plan-6m-name">
             <div class="pricing-card-header">
               <div class="plan-top-bar">
-                <span class="plan-pill plan-pill--featured" data-i18n="badge-6m">âœ¦ Best Value â€¢ 1,500 ETB Off</span>
+                <span class="plan-pill plan-pill--featured" data-i18n="badge-6m">✦ Best Value • 1,500 ETB Off</span>
               </div>
               <h3 id="plan-6m-name" class="plan-name" data-i18n="plan-6m-title">6 Months</h3>
               <div class="plan-price">
                 <span class="price-amount">7,500</span>
                 <span class="price-currency">ETB</span>
               </div>
-              <p class="plan-duration" data-i18n="plan-6m-dur">for 6 months â€¢ 1,250 ETB/mo (Lowest Rate)</p>
+              <p class="plan-duration" data-i18n="plan-6m-dur">for 6 months • 1,250 ETB/mo (Lowest Rate)</p>
             </div>
             <div class="pricing-card-body">
               <ul class="plan-features" role="list">
@@ -782,7 +785,7 @@
 
         <ul class="services-list" role="list">
 
-          <!-- Default-on services â€“ [[OWNER: verify these three services before launch]] -->
+          <!-- Default-on services — [[OWNER: verify these three services before launch]] -->
           <li class="service-row reveal">
             <span class="service-icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -866,50 +869,62 @@
         <p class="section-subtext reveal" data-i18n="gallery-subtext">Take a look inside our gym floor, weights area, and cardio zone. Tap any image to enlarge.</p>
         <!-- [[OWNER: replace all gallery images with real CROWN GYM photos. Expected filenames: gallery-1.jpg through gallery-6.jpg in assets/. Write descriptive alt text for each real photo. Remove these stock images before launch.]] -->
         <div class="gallery-grid">
-          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-1.jpg" data-lightbox-caption="Heavy iron dumbbells and barbells on rack at CROWN GYM" aria-label="View photo in full screen">
-            <img src="assets/gallery-1.jpg"
+          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-1.webp" data-lightbox-caption="Heavy iron dumbbells and barbells on rack at CROWN GYM" aria-label="View photo in full screen">
+            <img src="assets/gallery-1-thumb.webp"
+                 srcset="assets/gallery-1-thumb.webp 600w, assets/gallery-1.webp 1264w"
+                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 380px"
                  alt="Heavy iron dumbbells and barbells on a rack at CROWN GYM"
-                 loading="lazy" width="800" height="533" />
+                 loading="lazy" decoding="async" width="600" height="402" />
             <span class="gallery-zoom-badge" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </span>
           </figure>
-          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-2.jpg" data-lightbox-caption="Row of treadmills and elliptical cardio machines at CROWN GYM" aria-label="View photo in full screen">
-            <img src="assets/gallery-2.jpg"
+          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-2.webp" data-lightbox-caption="Row of treadmills and elliptical cardio machines at CROWN GYM" aria-label="View photo in full screen">
+            <img src="assets/gallery-2-thumb.webp"
+                 srcset="assets/gallery-2-thumb.webp 600w, assets/gallery-2.webp 1264w"
+                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 380px"
                  alt="Row of treadmills and elliptical cardio machines in the CROWN GYM cardio zone"
-                 loading="lazy" width="800" height="533" />
+                 loading="lazy" decoding="async" width="600" height="402" />
             <span class="gallery-zoom-badge" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </span>
           </figure>
-          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-3.jpg" data-lightbox-caption="Power rack and squat station with organised weight plates" aria-label="View photo in full screen">
-            <img src="assets/gallery-3.jpg"
+          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-3.webp" data-lightbox-caption="Power rack and squat station with organised weight plates" aria-label="View photo in full screen">
+            <img src="assets/gallery-3-thumb.webp"
+                 srcset="assets/gallery-3-thumb.webp 600w, assets/gallery-3.webp 1264w"
+                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 380px"
                  alt="Power rack and squat station with organised weight plates at CROWN GYM"
-                 loading="lazy" width="800" height="533" />
+                 loading="lazy" decoding="async" width="600" height="402" />
             <span class="gallery-zoom-badge" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </span>
           </figure>
-          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-4.jpg" data-lightbox-caption="Wide view of CROWN GYM training floor with free weights, benches and cables" aria-label="View photo in full screen">
-            <img src="assets/gallery-4.jpg"
+          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-4.webp" data-lightbox-caption="Wide view of CROWN GYM training floor with free weights, benches and cables" aria-label="View photo in full screen">
+            <img src="assets/gallery-4-thumb.webp"
+                 srcset="assets/gallery-4-thumb.webp 600w, assets/gallery-4.webp 1264w"
+                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 380px"
                  alt="Wide view of CROWN GYM training floor with free weights area, benches, and cable machines"
-                 loading="lazy" width="800" height="533" />
+                 loading="lazy" decoding="async" width="600" height="402" />
             <span class="gallery-zoom-badge" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </span>
           </figure>
-          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-5.jpg" data-lightbox-caption="Kettlebells and functional training equipment at CROWN GYM" aria-label="View photo in full screen">
-            <img src="assets/gallery-5.jpg"
+          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-5.webp" data-lightbox-caption="Kettlebells and functional training equipment at CROWN GYM" aria-label="View photo in full screen">
+            <img src="assets/gallery-5-thumb.webp"
+                 srcset="assets/gallery-5-thumb.webp 600w, assets/gallery-5.webp 1264w"
+                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 380px"
                  alt="Kettlebells and resistance bands on shelving in the functional area of CROWN GYM"
-                 loading="lazy" width="800" height="533" />
+                 loading="lazy" decoding="async" width="600" height="402" />
             <span class="gallery-zoom-badge" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </span>
           </figure>
-          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-6.jpg" data-lightbox-caption="Strength training zone with power racks and barbell stations" aria-label="View photo in full screen">
-            <img src="assets/gallery-6.jpg"
+          <figure class="gallery-item reveal gallery-zoomable" role="button" tabindex="0" data-lightbox-src="assets/gallery-6.webp" data-lightbox-caption="Strength training zone with power racks and barbell stations" aria-label="View photo in full screen">
+            <img src="assets/gallery-6-thumb.webp"
+                 srcset="assets/gallery-6-thumb.webp 600w, assets/gallery-6.webp 1264w"
+                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 380px"
                  alt="Strength training area with power racks and barbell stations at CROWN GYM"
-                 loading="lazy" width="800" height="533" />
+                 loading="lazy" decoding="async" width="600" height="402" />
             <span class="gallery-zoom-badge" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
             </span>
@@ -928,7 +943,7 @@
 
           <article class="review-card reveal">
             <div class="review-top">
-              <div class="review-stars" aria-label="5 out of 5 stars">â˜…â˜…â˜…â˜…â˜…</div>
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
               <span class="review-pill" data-i18n="review-1-tag">Monthly Member</span>
             </div>
             <blockquote class="review-quote" data-i18n="review-1-quote">
@@ -938,14 +953,14 @@
               <div class="author-avatar" aria-hidden="true">DT</div>
               <div>
                 <strong class="author-name" data-i18n="review-1-name">Dawit T.</strong>
-                <span class="author-role" data-i18n="review-1-role">Dukem â€¢ Member for 6 Months</span>
+                <span class="author-role" data-i18n="review-1-role">Dukem • Member for 6 Months</span>
               </div>
             </div>
           </article>
 
           <article class="review-card reveal">
             <div class="review-top">
-              <div class="review-stars" aria-label="5 out of 5 stars">â˜…â˜…â˜…â˜…â˜…</div>
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
               <span class="review-pill" data-i18n="review-2-tag">Beginner Friendly</span>
             </div>
             <blockquote class="review-quote" data-i18n="review-2-quote">
@@ -955,14 +970,14 @@
               <div class="author-avatar" aria-hidden="true">HM</div>
               <div>
                 <strong class="author-name" data-i18n="review-2-name">Hana M.</strong>
-                <span class="author-role" data-i18n="review-2-role">Dukem â€¢ 3 Months Member</span>
+                <span class="author-role" data-i18n="review-2-role">Dukem • 3 Months Member</span>
               </div>
             </div>
           </article>
 
           <article class="review-card reveal">
             <div class="review-top">
-              <div class="review-stars" aria-label="5 out of 5 stars">â˜…â˜…â˜…â˜…â˜…</div>
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
               <span class="review-pill" data-i18n="review-3-tag">Consistent Training</span>
             </div>
             <blockquote class="review-quote" data-i18n="review-3-quote">
@@ -972,7 +987,7 @@
               <div class="author-avatar" aria-hidden="true">BK</div>
               <div>
                 <strong class="author-name" data-i18n="review-3-name">Biniyam K.</strong>
-                <span class="author-role" data-i18n="review-3-role">Dukem â€¢ Regular Trainee</span>
+                <span class="author-role" data-i18n="review-3-role">Dukem • Regular Trainee</span>
               </div>
             </div>
           </article>
@@ -1057,7 +1072,7 @@
                 <span data-i18n="visit-cta-wa">Message on WhatsApp</span>
               </a>
               <a class="btn btn-telegram"
-                 href="https://t.me/CROWN GYMdukem"
+                 href="https://t.me/crowngymdukem"
                  data-cta="telegram-visit"
                  target="_blank"
                  rel="noopener noreferrer">
@@ -1226,7 +1241,7 @@
             </a>
           </li>
           <li>
-            <a href="https://t.me/CROWN GYMdukem"
+            <a href="https://t.me/crowngymdukem"
                data-cta="telegram-footer"
                target="_blank"
                rel="noopener noreferrer">

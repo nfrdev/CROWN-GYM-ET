@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Canonical XML Sitemap
-Sitemap: https://www.turbogym.et/sitemap.xml
+Sitemap: https://www.crowngym.et/sitemap.xml

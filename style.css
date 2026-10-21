@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    CROWN GYM – style.css
    Design tokens → base → layout → components → sections → utilities
    Brand: Premium · Modern · Powerful · Minimalist
@@ -72,7 +72,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + var(--sp-4));
   -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
 }
 
 body {
@@ -114,13 +113,13 @@ h1, h2, h3, h4 {
   left: var(--sp-4);
   padding: var(--sp-3) var(--sp-5);
   background: var(--clr-accent);
-  color: #fff;
-  font-weight: 600;
+  color: #0B0B0D;
+  font-weight: 800;
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
   z-index: 9999;
   transition: top var(--dur) var(--ease);
 }
-.skip-link:focus { top: 0; outline: 3px solid #fff; outline-offset: 2px; }
+.skip-link:focus { top: 0; outline: 3px solid #0B0B0D; outline-offset: 2px; }
 
 /* ── 4. LAYOUT HELPERS ───────────────────────────────────────── */
 .container {
@@ -183,11 +182,19 @@ h1, h2, h3, h4 {
 
 .btn-accent {
   background: var(--clr-accent);
-  color: #fff;
+  color: #0B0B0D;
+  font-weight: 800;
   border-color: transparent;
+  box-shadow: 0 4px 18px rgba(242, 193, 78, 0.28);
 }
 .btn-accent:hover {
-  background: var(--clr-accent-light);
+  background: var(--clr-accent-dark);
+  color: #0B0B0D;
+  box-shadow: 0 6px 24px rgba(242, 193, 78, 0.38);
+}
+.btn-accent svg {
+  fill: currentColor;
+  color: #0B0B0D;
 }
 
 .btn-ghost {
@@ -345,20 +352,41 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.8125rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.1rem;
   border-radius: var(--radius-full);
   white-space: nowrap;
   flex-shrink: 0;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(242, 193, 78, 0.3);
+  background: var(--clr-accent);
+  color: #0B0B0D;
+  box-shadow: 0 4px 16px rgba(242, 193, 78, 0.32);
+}
+.nav-cta svg {
+  fill: currentColor;
+  color: #0B0B0D;
+}
+.nav-cta:hover {
+  background: var(--clr-accent-dark);
+  color: #0B0B0D;
+  transform: translateY(-1px);
 }
 
-:lang(om) .primary-nav ul a,
+:lang(om) .primary-nav ul a {
+  padding: 0.45rem 0.45rem;
+  font-size: 0.73rem;
+}
+:lang(om) .primary-nav ul {
+  gap: 0.1rem;
+}
+
 :lang(am) .primary-nav ul a {
-  padding: 0.5rem 0.6rem;
-  font-size: 0.78rem;
+  padding: 0.45rem 0.55rem;
+  font-size: 0.76rem;
+}
+:lang(am) .primary-nav ul {
+  gap: 0.15rem;
 }
 
 .header-actions {
@@ -399,8 +427,9 @@ h1, h2, h3, h4 {
 
 .lang-btn.is-active {
   background: var(--clr-accent);
-  color: #fff;
-  box-shadow: 0 8px 18px rgba(242, 193, 78, 0.18);
+  color: #0B0B0D;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(242, 193, 78, 0.25);
 }
 
 .lang-btn:focus-visible {
@@ -565,7 +594,7 @@ h1, h2, h3, h4 {
 }
 
 /* Mobile / tablet nav (hamburger menu) – up to 899px */
-@media (max-width: 899px) {
+@media (max-width: 1060px) {
   .site-header {
     padding-top: 0.5rem;
   }
@@ -655,7 +684,8 @@ h1, h2, h3, h4 {
 
   .drawer-lang-switcher .lang-btn.is-active {
     background: var(--clr-accent);
-    color: #fff;
+    color: #0B0B0D;
+    font-weight: 800;
     border-color: var(--clr-accent);
   }
 }
@@ -1351,8 +1381,9 @@ h1, h2, h3, h4 {
 
 .plan-pill--featured {
   background: linear-gradient(135deg, var(--clr-accent) 0%, var(--clr-accent-light) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #fff;
+  border: 1px solid rgba(242, 193, 78, 0.4);
+  color: #0B0B0D;
+  font-weight: 800;
   box-shadow: 0 4px 14px rgba(242, 193, 78, 0.25);
 }
 
@@ -1705,7 +1736,7 @@ h1, h2, h3, h4 {
 .faq-item[open] .faq-icon {
   transform: rotate(180deg);
   background: var(--clr-accent);
-  color: #fff;
+  color: #0B0B0D;
   border-color: var(--clr-accent);
 }
 
@@ -2378,14 +2409,14 @@ body.lightbox-locked {
 .author-avatar {
   width: 42px;
   height: 42px;
-  background: linear-gradient(135deg, var(--clr-accent) 0%, #9b0e13 100%);
+  background: linear-gradient(135deg, var(--clr-accent) 0%, #C49B28 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.8rem;
   font-weight: 800;
-  color: #fff;
+  color: #0B0B0D;
   letter-spacing: 0.04em;
   flex-shrink: 0;
 }
