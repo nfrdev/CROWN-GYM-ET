@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7D278"/>
+      <stop offset="50%" stop-color="#F2C14E"/>
+      <stop offset="100%" stop-color="#DFAE35"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0B0D"/>
+      <stop offset="100%" stop-color="#171719"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="64" height="64" rx="14" fill="url(#bgGrad)"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="13" fill="none" stroke="#303035" stroke-width="1.5"/>
+  <!-- Crown shape -->
+  <path d="M12 46 L16 26 L26 36 L32 20 L38 36 L48 26 L52 46 Z" fill="url(#goldGrad)" stroke="#F2C14E" stroke-width="0.5" stroke-linejoin="round"/>
+  <!-- Crown base band -->
+  <rect x="12" y="44" width="40" height="6" rx="2" fill="url(#goldGrad)"/>
+  <!-- Crown jewels -->
+  <circle cx="32" cy="22" r="2.5" fill="#0B0B0D" opacity="0.5"/>
+  <circle cx="32" cy="22" r="1.5" fill="#F5F5F5"/>
+</svg>
